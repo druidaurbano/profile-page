@@ -1,0 +1,56 @@
+:host {
+  overflow: hidden;
+}
+
+main {
+  width: 65%;
+  height: 100%;
+  padding: 200px 17.5% 0 17.5%;
+  //background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  row-gap: 88px;
+  overflow: hidden;
+
+  //background: url(../assets/svg/left-branch.svg) no-repeat;
+
+  p {
+    margin: 0;
+  }
+
+  .center-container {
+    width: 100%;
+    height: 256px;
+    //background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Indie Flower', cursive;
+    color: #467A36;
+    .center-name {
+      font-size: 128px;
+      margin: 0;
+    }
+    .center-subtitle {
+      font-size: 56px;
+      //margin: 0;
+    }
+  }
+
+  .about-container {
+    width: 100%;
+    height: 232px;
+    //background-color: brown;
+  }
+
+  app-background {
+    width: 100%;
+    //height: 100%;
+    //background-color: aquamarine;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* overflow-y: hidden; */
+  }
+}

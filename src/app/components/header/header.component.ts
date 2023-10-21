@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  buttonList: Array<any> = [];
+
+  constructor() {
+    this.buttonList = [
+      {
+        name: 'Portfolio'
+      },
+      {
+        name: 'About'
+      },
+      {
+        name: 'Contact'
+      },
+    ];
+  }
+
 
 }
