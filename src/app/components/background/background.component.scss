@@ -33,13 +33,20 @@
     background-color: antiquewhite;
     app-up-branch {
       max-height: 86px;
-      transform: translate(0, 84px);
+      transform: translate(0px, 0);
       stroke: #7A4636;
       stroke-width: 1px;
-      //position: absolute;
+      position: absolute;
       &.up-down {
         transform: rotate(180deg);
       }
+    }
+  }
+
+  .right-left-container {
+    background-color: aquamarine;
+    .left-container {
+      //height: calc(100% - 168px);
     }
   }
 
