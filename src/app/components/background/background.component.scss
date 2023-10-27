@@ -6,36 +6,67 @@
 
 .background-container {
   //width: 100%;
-  //height: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center;
+  padding: 0 208px;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: rebeccapurple;
   //background: url(./../../../assets/svg/full-branch.svg) no-repeat;
   //background-position: center;
-
-  #circle-svg {
-    stroke-dasharray: 200;
-    stroke-dashoffset: 200;
-    animation: draw 4s linear forwards;
-  }
-  #circlesLeft {
-    stroke-dasharray: 200;
-    stroke-dashoffset: 200;
-    animation: draw 4s linear forwards;
-  }
-  #full-branch {
-    path {
-      stroke-dasharray: 5461;
-      stroke-dashoffset: 5461;
-      animation: draw 50s;
-    }
-  }
 
   #leaf {
     path {
       stroke-dasharray: 4787;
       stroke-dashoffset: 4787;
-      animation: draw 50s;
+      animation: draw 50s forwards;
       //fill-opacity: 1;
+    }
+  }
+
+  .up-container {
+    //width: 100%;
+    height: 168px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 80px;
+    background-color: antiquewhite;
+    app-up-branch {
+      max-height: 86px;
+      transform: translate(0, 84px);
+      stroke: #7A4636;
+      stroke-width: 1px;
+      //position: absolute;
+      &.up-down {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  app-left-right-branch {
+    &.left-branch{
+      max-height: 160px;
+      //position: absolute;
+      //top: 84px;
+      //left: 208px;
+      //transform: translate(0, 84px);
+      stroke: #7A4636;
+      stroke-width: 1px;
+      &.up-down {
+        transform: rotate(180deg);
+      }
+    }
+    &.right-branch{
+      max-height: 160px;
+      //position: absolute;
+      //top: 84px;
+      //left: 208px;
+      //transform: translate(0, 84px);
+      stroke: #7A4636;
+      stroke-width: 1px;
+      &.up-down {
+        transform: rotate(180deg);
+      }
     }
   }
 }

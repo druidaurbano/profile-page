@@ -1,0 +1,13 @@
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#up-semi-circle {
+  path {
+    stroke-dasharray: 267;
+    stroke-dashoffset: 267;
+    animation: draw 5s forwards;
+  }
+}

@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./background.component.scss']
 })
 export class BackgroundComponent {
+  upBranchList: any = [1,2,3,4,5,6,7,8];
+  leftBranchList: any = [1,2,3,4,5,6,7];
+  rightBranchList: any = [1,2,3,4,5,6,7];
 
   constructor() {
 

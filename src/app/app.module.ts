@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './components/header/header.module';
 import { BackgroundModule } from './components/background/background.module';
 import { FullBranchModule } from './components/full-branch/full-branch.module';
+import { UpBranchModule } from './components/up-branch/up-branch.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FullBranchModule } from './components/full-branch/full-branch.module';
     AppRoutingModule,
     HeaderModule,
     BackgroundModule,
-    FullBranchModule
+    FullBranchModule,
+    UpBranchModule
   ],
   providers: [],
   bootstrap: [AppComponent]
